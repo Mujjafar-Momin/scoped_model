@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:scoped_model_example/model/Counter_text_model.dart';
 
-class MyWidget extends StatefulWidget {
+class MyWidget extends StatelessWidget {
   const MyWidget({Key? key}) : super(key: key);
 
-  @override
-  State<MyWidget> createState() => _MyWidgetState();
-}
-
-class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
     return ScopedModelDescendant<CounterTextModel>(
